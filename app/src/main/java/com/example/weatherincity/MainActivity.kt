@@ -1,7 +1,9 @@
 package com.example.weatherincity
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
@@ -11,6 +13,11 @@ class MainActivity : AppCompatActivity() {
 
         val textViewHello = findViewById<TextView>(R.id.tvHello)
         textViewHello.text = "NO"
+
+        val btnWeather = findViewById<Button>(R.id.btnMain)
+        btnWeather.setOnClickListener {
+            Intent(this, WeatherActivity::class.java).also { startActivity(it) }
+        }
     }
 
 }
