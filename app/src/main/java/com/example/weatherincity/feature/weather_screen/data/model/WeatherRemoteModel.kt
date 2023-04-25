@@ -1,6 +1,5 @@
 package com.example.weatherincity.feature.weather_screen.data.model
 
-import com.example.weatherincity.feature.weather_screen.data.WeatherApiClient
 import com.google.gson.annotations.SerializedName
 
 data class WeatherRemoteModel(
