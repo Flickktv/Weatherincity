@@ -9,4 +9,9 @@ class WeatherRemoteSource(private val api: WeatherApi) {
     suspend fun getWeather(): WeatherRemoteModel {
         return api.getWeather(query = "Moscow")
     }
+
+    suspend fun getSpeed(): WeatherRemoteModel {
+        return api.getSpeed(query = "Moscow")
+    }
+
 }
